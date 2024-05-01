@@ -1,0 +1,60 @@
+.list-item {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100px 1fr;
+    align-items: stretch;
+    place-items: stretch;
+    background: white;
+    box-shadow: 2px 2px 4px solid grey;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow:hidden;
+}
+.list-ind-cont {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #bbb;
+    color: #444;
+}
+.side-green {
+    box-shadow: -10px 0 10px 10px green;
+}
+.side-red {
+    box-shadow: -10px 0 10px 10px red;
+}
+.ind-cont {
+    font-size: 30px;
+    margin: 5px;
+}
+.price-cont {
+    font-weight: bold;
+    font-size: 30px;
+}
+.color-green {
+    color: green;
+}
+.color-red {
+    color: red;
+}
+.list-main-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.amount-sideImg {
+    width: 25px;
+    height: 25px;
+}
+.list-topic-cont {
+    font-size: 30px;
+    margin: 5px 0 10px 0;
+}
+.date-cont {
+    font-size: 15px;
+    color: #444;
+    margin: 0;
+}

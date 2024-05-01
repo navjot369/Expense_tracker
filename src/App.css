@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+#most-outer-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #d0d4d7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dashboard-container {
+  background: var(--blue);
+  margin: 4px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#dashboard-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#main-logo {
+  width: 60px;
+}
+#dashboard-title h1 {
+  font-size: 25px;
+  color: #E8DFCA;
+}
+#dashboard-links-cont {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+#dashboard-links-cont a, #dashboard-links-cont p {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  width: 100%;
+  margin: 4px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
   color: white;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+#dashboard-links-cont a:hover, #dashboard-links-cont p:hover {
+  background: var(--yellow);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#dashboard-links-cont a.active{
+  color: var(--blue);
+  background: var(--yellow);
+}
+.outlet-cont {
+  width: 100%;
+  overflow-y: scroll;
 }
