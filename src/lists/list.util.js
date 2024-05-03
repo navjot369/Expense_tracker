@@ -2,7 +2,7 @@ import "./list.css";
 
 export default function ListItem({ind, item}) {
     const date = new Date(item.date);
-    const dateStr = date.getDate() + " " + date.toLocaleString("default", {month: "long"}) + date.getFullYear() + "  " + (date.getHours()%12) + ":" + (date.getMinutes() > 9? "":"0") + date.getMinutes() + (date.getHours() > 11? " PM":" AM");
+    const dateStr = date.getDate() + " " + date.toLocaleString("default", {month: "long"}) + " " + date.getFullYear() + "  " + (date.getHours()%12) + ":" + (date.getMinutes() > 9? "":"0") + date.getMinutes() + (date.getHours() > 11? " PM":" AM");
     const color = item.add? "green":"red";
     console.log(date);
     return(<div className="list-item">

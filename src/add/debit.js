@@ -34,7 +34,7 @@ export default function Debit() {
         const obj = JSON.parse(localStorage.getItem("money"));
         obj.total = +obj.total + +amount;
         obj.debit = +obj.debit + +amount;
-        obj.entries.push(curr);
+        obj.entries.unshift(curr);
         localStorage.setItem("money", JSON.stringify(obj));
         window.location = "/";
     }
@@ -62,7 +62,7 @@ export default function Debit() {
             </div>
             <div className="button-cont">
                 <button className="reset-button" onClick={() => {setFinal(false)}}>Cancel</button>
-                <button className="submit-button" onClick={handleFinalSubmit}>Confirm</button>
+                <button className="submit-button" onClick={handleFinalSubmit} selected >Confirm</button>
             </div>
         </div>)
     };

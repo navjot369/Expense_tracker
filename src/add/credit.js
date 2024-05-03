@@ -39,7 +39,7 @@ export default function Debit() {
         }
         obj.total = +obj.total - +amount;
         obj.credit = +obj.credit + +amount;
-        obj.entries.push(curr);
+        obj.entries.unshift(curr);
         localStorage.setItem("money", JSON.stringify(obj));
         window.location = "/";
     }

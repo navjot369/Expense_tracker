@@ -1,0 +1,93 @@
+.auth-outer-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+#login-title-main {
+    position: fixed;
+    top: 0;
+    margin: auto;
+    display: flex;
+    color: var(--blue);
+    text-decoration: none;
+}
+#main-logo {
+    width: 80px;
+}
+.auth-outer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid var(--blue);
+    padding: 40px 20px;
+    border-radius: 15px;
+
+}
+.login-title {
+    font-size: 30px;
+    color: var(--blue);
+    margin: 20px;
+}
+.login-form h3 {
+    margin: 5px;
+    font-size: 22px;
+}
+.login-form input {
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+    font-size: 20px;
+    width: 300px;
+    padding: 5px 10px;
+}
+.button-cont-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+    gap: 5px;
+}
+.button-cont-outer button {
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button-cont-outer button:hover {
+    filter: brightness(0.5);
+}
+.button-cont-outer button:nth-child(1) {
+    color: black;
+}
+.button-cont-outer button:nth-child(2) {
+    background-color: var(--blue);
+    color: white;
+}
+.other-login-opt {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.other-login-opt a {
+    text-decoration: none;
+    color: var(--blue);
+}
+.user-registered {
+    font-size: 30px;
+    font-weight: bolder;
+}
+.user-registered p{
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+    font-weight: light;
+}
