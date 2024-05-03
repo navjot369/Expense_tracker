@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
     const [name, setName] = useState("");
-    const [isLogged, setLogged] = useState(false);
     const handleSubmit = (e) => {
         e.preventDefault();
         localStorage.setItem("money-user", name[0].toUpperCase() + name.substring(1,).toLowerCase());

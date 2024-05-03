@@ -20,7 +20,7 @@ export default function Transact() {
         </div>
         <div className="list-cont-outer">
             {obj.entries.length > 0? 
-            obj.entries.map((item, ind) => <ListItem ind={ind} item={item} />)
+            obj.entries.map((item, ind) => <ListItem ind={ind} item={item} key={ind}/>)
         :<p className="no-entry">No entry yet...!!</p>}
         </div>
     </div>);
